@@ -25,7 +25,11 @@ mongoose.connect(process.env.MONGODB_URI)
 
 // Routes
 app.use('/api/admin', require('./routes/admin'));
+// app.use('/api/courses', require('./routes/courses'));
+
 app.use('/api/courses', require('./routes/courses'));
+
+
 app.use('/api/payment', require('./routes/payment'));
 app.use('/api/upload', require('./routes/upload'));
 app.use('/api/user', require('./routes/user'));
